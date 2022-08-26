@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div{
+      font-size: 18px; padding: 0px; margin: 20px; color: rgb(29, 86, 209);
+    }
+  </style>
+  <title>FORM</title>
+</head>
+<body style="background-image:url(R.jpg)">
+  <form style="text-align: center">
+    <fieldset style="border-color: rgb(214, 23, 23); background-image: url(whiteimg.png); border-radius: 15px; margin: 100px; margin-top: 20px; " >
+    <h1><legend style="color:rgb(218, 19, 19); font-size:30px">Student Data</legend></h1>
+     <div>
+ Salutation
+          <select name="salutation">
+            <option>--None--</option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+            <option>Prof.</option>
+          </select>
+        
+      <br><br>
+
+        First name: <input name="firstName" placeholder="First Name" required />
+      <br><br>
+        Last name: <input name="lastName" placeholder="Last Name" required/>
+      <br><br>
+
+        Gender :
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+      <br><br>
+      contact :<input type="digit" name="number" maxlength="10">
+      <br><br>
+      Id Number: <input type="number" value="10200" name="id number" min="10200" max="10500" ><br><br>
+
+ Email:<input type="email" name="email" placeholder="xyz123@gamil.com" required />
+      <br><br>
+      Password:<input type="password" name="password">
+      <br><br>
+ 
+        Date of Birth:<input type="date" name="birthDate">
+      <br><br>
+      Field:
+ <input type="checkbox" name="field" value="CSE">CSE
+ <input type="checkbox" name="field" value="CE">CE
+ <input type="checkbox" name="field" value="MECH">MECH
+ <input type="checkbox" name="field" value="IT">IT
+ <br><br>
+ 
+ 
+        
+    Address: <textarea name="address" cols="30" rows="3"></textarea>
+    <br><br>
+    Add your passport size photo: <input type="file" name="img" multiple>
+<br><br>
+  </div>
+    
+      <br>
+        <button type="submit" style="background-color: rgb(153, 251, 153);">Submit</button>
+        <button type="reset" style="background-color: rgb(250, 144, 144);">Reset</button>
+      <br><br>
+ 
+ 
+     </fieldset>
+  </form>
+</body>
+</html>
